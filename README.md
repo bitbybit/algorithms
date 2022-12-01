@@ -15,3 +15,5 @@
 ## Введение в алгоритмы
 
 ### [A. Значения функции](https://github.com/bitbybit/algorithms/blob/main/intro/function_values/)
+
+### [B. Чётные и нечётные числа](https://github.com/bitbybit/algorithms/blob/main/intro/even_and_odd/)
