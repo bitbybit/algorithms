@@ -19,3 +19,5 @@
 ### [B. Чётные и нечётные числа](https://github.com/bitbybit/algorithms/blob/main/intro/even_and_odd/)
 
 ### [C. Соседи](https://github.com/bitbybit/algorithms/blob/main/intro/neighbours/)
+
+### [D. Хаотичность погоды](https://github.com/bitbybit/algorithms/blob/main/intro/random_weather/)
