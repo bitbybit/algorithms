@@ -8,7 +8,7 @@
 
 ### [D. Две фишки](https://github.com/bitbybit/algorithms/blob/main/sample/two_chips/)
 
-### [D. Две фишки 2](https://github.com/bitbybit/algorithms/blob/main/sample/two_chips_2/)
+### [E. Две фишки 2](https://github.com/bitbybit/algorithms/blob/main/sample/two_chips_2/)
 
 ---
 
@@ -17,3 +17,5 @@
 ### [A. Значения функции](https://github.com/bitbybit/algorithms/blob/main/intro/function_values/)
 
 ### [B. Чётные и нечётные числа](https://github.com/bitbybit/algorithms/blob/main/intro/even_and_odd/)
+
+### [C. Соседи](https://github.com/bitbybit/algorithms/blob/main/intro/neighbours/)
