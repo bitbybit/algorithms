@@ -9,3 +9,9 @@
 ### [D. Две фишки](https://github.com/bitbybit/algorithms/blob/main/sample/two_chips/)
 
 ### [D. Две фишки 2](https://github.com/bitbybit/algorithms/blob/main/sample/two_chips_2/)
+
+---
+
+## Введение в алгоритмы
+
+### [A. Значения функции](https://github.com/bitbybit/algorithms/blob/main/intro/function_values/)
