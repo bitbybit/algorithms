@@ -31,3 +31,5 @@
 ### [H. Двоичная система](https://github.com/bitbybit/algorithms/blob/main/intro/binary_system/)
 
 ### [I. Степень четырёх](https://github.com/bitbybit/algorithms/blob/main/intro/power_of_four/)
+
+### [J. Факторизация](https://github.com/bitbybit/algorithms/blob/main/intro/factorization/)
