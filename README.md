@@ -27,3 +27,5 @@
 ### [F. Палиндром](https://github.com/bitbybit/algorithms/blob/main/intro/palindrome/)
 
 ### [G. Работа из дома](https://github.com/bitbybit/algorithms/blob/main/intro/work_from_home/)
+
+### [H. Двоичная система](https://github.com/bitbybit/algorithms/blob/main/intro/binary_system/)
