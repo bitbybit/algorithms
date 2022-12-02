@@ -33,3 +33,5 @@
 ### [I. Степень четырёх](https://github.com/bitbybit/algorithms/blob/main/intro/power_of_four/)
 
 ### [J. Факторизация](https://github.com/bitbybit/algorithms/blob/main/intro/factorization/)
+
+### [K. Списочная форма](https://github.com/bitbybit/algorithms/blob/main/intro/list_form/)
