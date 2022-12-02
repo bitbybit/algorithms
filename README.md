@@ -35,3 +35,5 @@
 ### [J. Факторизация](https://github.com/bitbybit/algorithms/blob/main/intro/factorization/)
 
 ### [K. Списочная форма](https://github.com/bitbybit/algorithms/blob/main/intro/list_form/)
+
+### [L. Лишняя буква](https://github.com/bitbybit/algorithms/blob/main/intro/extra_letter/)
