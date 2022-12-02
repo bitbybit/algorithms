@@ -21,3 +21,5 @@
 ### [C. Соседи](https://github.com/bitbybit/algorithms/blob/main/intro/neighbours/)
 
 ### [D. Хаотичность погоды](https://github.com/bitbybit/algorithms/blob/main/intro/random_weather/)
+
+### [E. Самое длинное слово](https://github.com/bitbybit/algorithms/blob/main/intro/longest_word/)
