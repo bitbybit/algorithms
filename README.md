@@ -25,3 +25,5 @@
 ### [E. Самое длинное слово](https://github.com/bitbybit/algorithms/blob/main/intro/longest_word/)
 
 ### [F. Палиндром](https://github.com/bitbybit/algorithms/blob/main/intro/palindrome/)
+
+### [G. Работа из дома](https://github.com/bitbybit/algorithms/blob/main/intro/work_from_home/)
