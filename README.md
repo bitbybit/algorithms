@@ -10,8 +10,6 @@
 
 ### [E. Две фишки 2](https://github.com/bitbybit/algorithms/blob/main/sample/two_chips_2/)
 
----
-
 ## Введение в алгоритмы
 
 ### [A. Значения функции](https://github.com/bitbybit/algorithms/blob/main/intro/function_values/)
@@ -37,3 +35,7 @@
 ### [K. Списочная форма](https://github.com/bitbybit/algorithms/blob/main/intro/list_form/)
 
 ### [L. Лишняя буква](https://github.com/bitbybit/algorithms/blob/main/intro/extra_letter/)
+
+## Введение в алгоритмы. Финальные задачи.
+
+### [A. Ближайший ноль](https://github.com/bitbybit/algorithms/blob/main/intro_final/nearest_zero/)
