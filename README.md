@@ -41,3 +41,8 @@
 ### [A. Ближайший ноль](https://github.com/bitbybit/algorithms/blob/main/intro_final/nearest_zero/)
 
 ### [B. Ловкость рук](https://github.com/bitbybit/algorithms/blob/main/intro_final/prestidigitation/)
+
+## Основные структуры данных
+
+### [A. Мониторинг](https://github.com/bitbybit/algorithms/blob/main/data_types/monitoring/)
+
