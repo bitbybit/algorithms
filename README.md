@@ -48,3 +48,5 @@
 
 ### [B. Список дел](https://github.com/bitbybit/algorithms/blob/main/data_types/todo_list/)
 
+### [C. Нелюбимое дело](https://github.com/bitbybit/algorithms/blob/main/data_types/unfavourite_business/)
+
