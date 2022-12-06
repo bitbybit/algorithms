@@ -50,3 +50,5 @@
 
 ### [C. Нелюбимое дело](https://github.com/bitbybit/algorithms/blob/main/data_types/unfavourite_business/)
 
+### [D. Заботливая мама](https://github.com/bitbybit/algorithms/blob/main/data_types/caring_mom/)
+
