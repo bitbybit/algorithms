@@ -46,3 +46,5 @@
 
 ### [A. Мониторинг](https://github.com/bitbybit/algorithms/blob/main/data_types/monitoring/)
 
+### [B. Список дел](https://github.com/bitbybit/algorithms/blob/main/data_types/todo_list/)
+
