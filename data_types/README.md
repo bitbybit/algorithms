@@ -9,3 +9,5 @@
 ### [D. Заботливая мама](https://github.com/bitbybit/algorithms/blob/main/data_types/caring_mom/)
 
 ### [E. Всё наоборот](https://github.com/bitbybit/algorithms/blob/main/data_types/other_way_around/)
+
+### [F. Стек - Max](https://github.com/bitbybit/algorithms/blob/main/data_types/stack_max/)
