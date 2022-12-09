@@ -13,3 +13,5 @@
 ### [F. Стек - Max](https://github.com/bitbybit/algorithms/blob/main/data_types/stack_max/)
 
 ### [G. Стек - MaxEffective](https://github.com/bitbybit/algorithms/blob/main/data_types/stack_max_effective/)
+
+### [H. Скобочная последовательность](https://github.com/bitbybit/algorithms/blob/main/data_types/bracket_sequence/)
