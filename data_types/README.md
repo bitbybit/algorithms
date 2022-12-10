@@ -17,3 +17,5 @@
 ### [H. Скобочная последовательность](https://github.com/bitbybit/algorithms/blob/main/data_types/bracket_sequence/)
 
 ### [I. Ограниченная очередь](https://github.com/bitbybit/algorithms/blob/main/data_types/limited_queue/)
+
+### [J. Списочная очередь](https://github.com/bitbybit/algorithms/blob/main/data_types/list_queue/)
