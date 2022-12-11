@@ -19,3 +19,5 @@
 ### [I. Ограниченная очередь](https://github.com/bitbybit/algorithms/blob/main/data_types/limited_queue/)
 
 ### [J. Списочная очередь](https://github.com/bitbybit/algorithms/blob/main/data_types/list_queue/)
+
+### [K. Рекурсивные числа Фибоначчи](https://github.com/bitbybit/algorithms/blob/main/data_types/recursive_fibonacci_numbers/)
