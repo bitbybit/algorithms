@@ -21,3 +21,5 @@
 ### [J. Списочная очередь](https://github.com/bitbybit/algorithms/blob/main/data_types/list_queue/)
 
 ### [K. Рекурсивные числа Фибоначчи](https://github.com/bitbybit/algorithms/blob/main/data_types/recursive_fibonacci_numbers/)
+
+### [L. Фибоначчи по модулю](https://github.com/bitbybit/algorithms/blob/main/data_types/fibonacci_modulo/)
