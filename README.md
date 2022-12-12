@@ -5,3 +5,5 @@
 ### [3. Введение в алгоритмы. Финальные задачи.](https://github.com/bitbybit/algorithms/blob/main/intro_final/)
 
 ### [4. Основные структуры данных](https://github.com/bitbybit/algorithms/blob/main/data_types/)
+
+### [4. Основные структуры данных. Финальные задачи.](https://github.com/bitbybit/algorithms/blob/main/data_types_final/)
