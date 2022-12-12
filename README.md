@@ -6,4 +6,4 @@
 
 ### [4. Основные структуры данных](https://github.com/bitbybit/algorithms/blob/main/data_types/)
 
-### [4. Основные структуры данных. Финальные задачи.](https://github.com/bitbybit/algorithms/blob/main/data_types_final/)
+### [5. Основные структуры данных. Финальные задачи.](https://github.com/bitbybit/algorithms/blob/main/data_types_final/)
