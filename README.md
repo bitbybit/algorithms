@@ -7,3 +7,5 @@
 ### [4. Основные структуры данных](https://github.com/bitbybit/algorithms/blob/main/data_types/)
 
 ### [5. Основные структуры данных. Финальные задачи.](https://github.com/bitbybit/algorithms/blob/main/data_types_final/)
+
+### [6. Рекурсия и сортировки](https://github.com/bitbybit/algorithms/blob/main/recursion/)
