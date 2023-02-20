@@ -9,3 +9,5 @@
 ### [D. Печеньки](https://github.com/bitbybit/algorithms/blob/main/recursion/cookies/)
 
 ### [E. Покупка домов](https://github.com/bitbybit/algorithms/blob/main/recursion/buying_houses/)
+
+### [F. Периметр треугольника](https://github.com/bitbybit/algorithms/blob/main/recursion/perimeter_of_triangle/)
