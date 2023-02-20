@@ -7,3 +7,5 @@
 ### [C. Подпоследовательность](https://github.com/bitbybit/algorithms/blob/main/recursion/subsequence/)
 
 ### [D. Печеньки](https://github.com/bitbybit/algorithms/blob/main/recursion/cookies/)
+
+### [E. Покупка домов](https://github.com/bitbybit/algorithms/blob/main/recursion/buying_houses/)
