@@ -13,3 +13,5 @@
 ### [F. Периметр треугольника](https://github.com/bitbybit/algorithms/blob/main/recursion/perimeter_of_triangle/)
 
 ### [G. Гардероб](https://github.com/bitbybit/algorithms/blob/main/recursion/wardrobe/)
+
+### [H. Большое число](https://github.com/bitbybit/algorithms/blob/main/recursion/big_number/)
