@@ -15,3 +15,5 @@
 ### [G. Гардероб](https://github.com/bitbybit/algorithms/blob/main/recursion/wardrobe/)
 
 ### [H. Большое число](https://github.com/bitbybit/algorithms/blob/main/recursion/big_number/)
+
+### [I. Любители конференций](https://github.com/bitbybit/algorithms/blob/main/recursion/conference_fans/)
