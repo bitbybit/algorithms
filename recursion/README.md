@@ -17,3 +17,5 @@
 ### [H. Большое число](https://github.com/bitbybit/algorithms/blob/main/recursion/big_number/)
 
 ### [I. Любители конференций](https://github.com/bitbybit/algorithms/blob/main/recursion/conference_fans/)
+
+### [J. Пузырёк](https://github.com/bitbybit/algorithms/blob/main/recursion/bubble_sort/)
