@@ -19,3 +19,5 @@
 ### [I. Любители конференций](https://github.com/bitbybit/algorithms/blob/main/recursion/conference_fans/)
 
 ### [J. Пузырёк](https://github.com/bitbybit/algorithms/blob/main/recursion/bubble_sort/)
+
+### [K. Сортировка слиянием](https://github.com/bitbybit/algorithms/blob/main/recursion/merge_sort/)
