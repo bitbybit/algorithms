@@ -23,3 +23,5 @@
 ### [K. Сортировка слиянием](https://github.com/bitbybit/algorithms/blob/main/recursion/merge_sort/)
 
 ### [L. Два велосипеда](https://github.com/bitbybit/algorithms/blob/main/recursion/two_bicycles/)
+
+### [M. Золотая середина](https://github.com/bitbybit/algorithms/blob/main/recursion/golden_mean/)
