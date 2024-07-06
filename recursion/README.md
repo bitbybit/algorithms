@@ -25,3 +25,5 @@
 ### [L. Два велосипеда](https://github.com/bitbybit/algorithms/blob/main/recursion/two_bicycles/)
 
 ### [M. Золотая середина](https://github.com/bitbybit/algorithms/blob/main/recursion/golden_mean/)
+
+### [N. Клумбы](https://github.com/bitbybit/algorithms/blob/main/recursion/flower_beds/)
