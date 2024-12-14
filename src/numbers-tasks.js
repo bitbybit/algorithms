@@ -618,8 +618,16 @@ function getMaxNumber(firstNumber, secondNumber) {
  * -5, 0 => -5 | -4 | -3 | -2 | -1 | 0
  * -1, 1 => -1 | 0 | 1
  */
-function getRandomInteger(/* min, max */) {
-  throw new Error('Not implemented');
+function getRandomInteger(min, max) {
+  const results = [];
+
+  for (let i = min; i <= max; i += 1) {
+    results.push(i);
+  }
+
+  const randomIndex = Math.round(Math.random());
+
+  return results[randomIndex];
 }
 
 /**
