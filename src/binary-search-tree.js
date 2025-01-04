@@ -110,18 +110,24 @@ class BinarySearchTree {
     data,
     tree
   }) {
+    const hasLeft = tree?.left !== null
+    const hasRight = tree?.right !== null
+
+    const isNotLeftNode = tree?.left?.data !== data
+    const isNotRightNode = tree?.right?.data !== data
+
     switch (true) {
       case (
         this.#isLeft(tree, data) &&
-        tree?.left !== null &&
-        tree?.left?.data !== data
+        hasLeft &&
+        isNotLeftNode
       ):
         return this.#searchParent({ data, tree: tree.left });
 
       case (
         this.#isRight(tree, data) &&
-        tree?.right !== null &&
-        tree?.right?.data !== data
+        hasRight &&
+        isNotRightNode
       ):
         return this.#searchParent({ data, tree: tree.right });
 
@@ -140,8 +146,10 @@ class BinarySearchTree {
     data,
     tree
   }) {
+    const isSameNode = tree?.data === data
+
     switch (true) {
-      case tree?.data === data:
+      case isSameNode:
         return tree;
 
       case this.#isLeft(tree, data):
@@ -164,33 +172,37 @@ class BinarySearchTree {
     data,
     tree
   }) {
-    if (tree === null) {
+    const hasNode = tree !== null
+    const hasLeft = tree.left !== null
+    const hasRight = tree.right !== null
+
+    if (!hasNode) {
       return tree;
     }
 
-    if (data < tree.data) {
+    if (this.#isLeft(tree, data)) {
       tree.left = this.#filterNode({ data, tree: tree.left });
 
       return tree;
     }
 
-    if (data > tree.data) {
+    if (this.#isRight(tree, data)) {
       tree.right = this.#filterNode({ data, tree: tree.right });
 
       return tree;
     }
 
-    if (tree.left === null) {
+    if (!hasLeft) {
       return tree.right;
     }
 
-    if (tree.right === null) {
+    if (!hasRight) {
       return tree.left;
     }
 
     let successor = tree.right;
 
-    while (successor.left) {
+    while (successor.left !== null) {
       successor = successor.left;
     }
 
@@ -205,7 +217,7 @@ class BinarySearchTree {
    * @returns {number|null}
    */
   #searchMin(tree) {
-    if (tree?.left?.data < tree?.data) {
+    if (this.#isLeft(tree, tree?.left?.data)) {
       return this.#searchMin(tree.left);
     }
 
@@ -217,7 +229,7 @@ class BinarySearchTree {
    * @returns {number|null}
    */
   #searchMax(tree) {
-    if (tree?.right?.data > tree?.data) {
+    if (this.#isRight(tree, tree?.right?.data)) {
       return this.#searchMax(tree.right);
     }
 
