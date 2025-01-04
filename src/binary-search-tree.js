@@ -113,21 +113,21 @@ class BinarySearchTree {
     const hasLeft = tree?.left !== null
     const hasRight = tree?.right !== null
 
-    const isNotLeftNode = tree?.left?.data !== data
-    const isNotRightNode = tree?.right?.data !== data
+    const isLeftNode = tree?.left?.data === data
+    const isRightNode = tree?.right?.data === data
 
     switch (true) {
       case (
         this.#isLeft(tree, data) &&
         hasLeft &&
-        isNotLeftNode
+        !isLeftNode
       ):
         return this.#searchParent({ data, tree: tree.left });
 
       case (
         this.#isRight(tree, data) &&
         hasRight &&
-        isNotRightNode
+        !isRightNode
       ):
         return this.#searchParent({ data, tree: tree.right });
 
