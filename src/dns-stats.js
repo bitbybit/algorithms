@@ -1,10 +1,10 @@
-const { NotImplementedError } = require('../extensions/index.js');
-
 /**
  * Given an array of domains, return the object with the appearances of the DNS.
  *
- * @param {Array} domains
- * @return {Object}
+ * @param {Array<string>} domains
+ * @return {{
+ *   [domain: string]: number
+ * }}
  *
  * @example
  * domains = [
@@ -22,9 +22,25 @@ const { NotImplementedError } = require('../extensions/index.js');
  * }
  *
  */
-function getDNSStats(/* domains */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+function getDNSStats(domains) {
+  const result = {};
+
+  for (const domain of domains) {
+    const domainSplit = domain.split('.');
+    const domainReversed = domainSplit.reverse();
+
+    for (let i = 0; i < domainReversed.length; i++) {
+      const zone = `.${[
+        ...domainReversed.slice(0, i),
+        domainReversed[i],
+      ].join('.')}`;
+
+      result[zone] = result[zone] === undefined ?
+        1 : result[zone] + 1;
+    }
+  }
+
+  return result;
 }
 
 module.exports = {
