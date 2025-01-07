@@ -622,8 +622,19 @@ function sortDigitNamesByNumericOrder(arr) {
  *   swapHeadAndTail([]) => []
  *
  */
-function swapHeadAndTail(/* arr */) {
-  throw new Error('Not implemented');
+function swapHeadAndTail(arr) {
+  if (arr.length <= 1) {
+    return arr;
+  }
+
+  const isEven = arr.length % 2 === 0;
+  const halfIndex = Math.floor(arr.length / 2);
+
+  const head = arr.slice(0, halfIndex);
+  const middle = isEven ? [] : [arr[halfIndex]];
+  const tail = arr.slice(isEven ? halfIndex : halfIndex + 1);
+
+  return [...tail, ...middle, ...head];
 }
 
 module.exports = {
