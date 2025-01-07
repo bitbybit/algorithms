@@ -509,7 +509,7 @@ function findCommonElements(arr1, arr2) {
 /**
  * Finds the length of the longest increasing and uninterrupted subsequence of a given array of integers.
  *
- * @param {array} nums - The array of integers.
+ * @param {Array<number>} nums - The array of integers.
  * @return {number} - The length of the longest increasing subsequence.
  *
  * @example
@@ -517,8 +517,18 @@ function findCommonElements(arr1, arr2) {
  *    findLongestIncreasingSubsequence([3, 10, 2, 1, 20]) => longest is [3, 10] and [1, 20] => 2
  *    findLongestIncreasingSubsequence([50, 3, 10, 7, 40, 80]) => longest is [7, 40, 80] => 3
  */
-function findLongestIncreasingSubsequence(/* nums */) {
-  throw new Error('Not implemented');
+function findLongestIncreasingSubsequence(nums) {
+  return nums.reduce(
+    ({ max, current }, num, index) => {
+      const newCurrent = num > nums[index - 1] ? current + 1 : 1;
+
+      return {
+        max: Math.max(max, newCurrent),
+        current: newCurrent,
+      };
+    },
+    { max: 0, current: 0 }
+  ).max;
 }
 
 /**
