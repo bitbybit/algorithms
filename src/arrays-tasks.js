@@ -456,15 +456,17 @@ function getIndicesOfOddNumbers(numbers) {
 /**
  * Returns the array of RGB Hex strings from the specified array of numbers.
  *
- * @param {array} arr - The input array.
+ * @param {Array<number>} arr - The input array.
  * @return {array} - The array of RGB Hex strings.
  *
  * @example
  *    getHexRGBValues([ 0, 255, 16777215]) => [ '#000000', '#0000FF', '#FFFFFF' ]
  *    getHexRGBValues([]) => []
  */
-function getHexRGBValues(/* arr */) {
-  throw new Error('Not implemented');
+function getHexRGBValues(arr) {
+  return arr.map(
+    (rgb) => `#${rgb.toString(16).padStart(6, '0').toUpperCase()}`
+  );
 }
 
 /**
