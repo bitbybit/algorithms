@@ -1,44 +1,5 @@
 # BasicJS
 
-⚠️ DO NOT SUBMIT PULL REQUESTS TO THIS REPO ⚠️
-
----
-
-#### Prerequisites
-1. Install [Node.js](https://nodejs.org/en/download/)   
-2. Fork this repository: https://github.com/AlreadyBored/basic-js
-3. Clone your newly created repo: https://github.com/<%your_github_username%>/basic-js/  
-4. Go to folder `basic-js`  
-5. To install all dependencies use [`npm install`](https://docs.npmjs.com/cli/install)  
-6. Run `npm run test` in command line.
-7. You will see the number of pending, passing and failing tests. 100% of passing tests is equal to max score for the task
-
----
-
-#### Troubleshooting
-- If you catch error like [this](https://user-images.githubusercontent.com/17920285/158375305-f54d87fa-6f42-402f-af25-10b233d98cf9.png) you can try to make `npm install -g node-gyp`
-
----
-
-#### Submit to [rs app](https://app.rs.school)
-1. Open [rs app](https://app.rs.school) and login
-2. Go to submit task page
-3. Select your task (BasicJS)
-4. Press the submit button and enjoy
-
----
-
-#### Notes
-1. We recommend you to use Node.js of version 16.x.x LTS. If you use any of features, that does not supported by Node.js v16, there may be problems with task submit.
-2. Please, be sure that each of your tests is limited to 30 sec.
-
----
-
-## General task description
-Your task is to write several functions that are the solution to the subtasks. Subtasks descriptions, as well as instructions on how to run tests and submit solutions are below.
-
----
-
 ### **Count cats!**
 
 ![Count cats!](https://i.imgur.com/fK1LS0B.png)  
@@ -455,24 +416,3 @@ For 91, the result should be 1 (9 + 1 = 10, 1 + 0 = 1)
 `getSumOfDigits(91)` => `1`
 
 Write your code in `src/sum-digits.js`.
-
----
-
-© [AlreadyBored](https://github.com/alreadybored)  
-
-& tasks:
-* Common character count
-* Delete digit
-* DNS stat
-* Encode line
-* File names
-* Get email domain
-* Is MAC-48 Adress?
-* Matrix elements sum
-* Minesweeper
-* Sort by height
-* Sum digits
-
-are integrated from [Short track 2021 repo](https://github.com/rkhaslarov/rs-school-short-track-2021)
-
-& Thanks [mikhama](https://github.com/mikhama) for assistance!
