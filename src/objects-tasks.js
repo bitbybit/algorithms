@@ -374,32 +374,264 @@ function group(array, keySelector, valueSelector) {
  */
 
 const cssSelectorBuilder = {
-  element(/* value */) {
-    throw new Error('Not implemented');
+  instance: null,
+
+  init() {
+    this.instance = new (class Selector {
+      selector = [];
+
+      /**
+       * @param {string} value
+       * @returns {this}
+       */
+      element(value) {
+        this.validate('element');
+
+        this.selector.push({
+          type: 'element',
+          value,
+        });
+
+        return this;
+      }
+
+      /**
+       * @param {string} value
+       * @returns {this}
+       */
+      id(value) {
+        this.validate('id');
+
+        this.selector.push({
+          type: 'id',
+          value: `#${value}`,
+        });
+
+        return this;
+      }
+
+      /**
+       * @param {string} value
+       * @returns {this}
+       */
+      class(value) {
+        this.validate('class');
+
+        this.selector.push({
+          type: 'class',
+          value: `.${value}`,
+        });
+
+        return this;
+      }
+
+      /**
+       * @param {string} value
+       * @returns {this}
+       */
+      attr(value) {
+        this.validate('attr');
+
+        this.selector.push({
+          type: 'attr',
+          value: `[${value}]`,
+        });
+
+        return this;
+      }
+
+      /**
+       * @param {string} value
+       * @returns {this}
+       */
+      pseudoClass(value) {
+        this.validate('pseudoClass');
+
+        this.selector.push({
+          type: 'pseudoClass',
+          value: `:${value}`,
+        });
+
+        return this;
+      }
+
+      /**
+       * @param {string} value
+       * @returns {this}
+       */
+      pseudoElement(value) {
+        this.validate('pseudoElement');
+
+        this.selector.push({
+          type: 'pseudoElement',
+          value: `::${value}`,
+        });
+
+        return this;
+      }
+
+      /**
+       * @returns {string}
+       */
+      stringify() {
+        return this.selector.map(({ value }) => value).join('');
+      }
+
+      /**
+       * @param {'element'|'id'|'class'|'attr'|'pseudoClass'|'pseudoElement'} type
+       * @throws {Error}
+       */
+      validate(type) {
+        const lastType = this.selector.at(-1)?.type;
+
+        if (
+          (type === 'element' && lastType === 'element') ||
+          (type === 'id' && lastType === 'id') ||
+          (type === 'pseudoElement' && lastType === 'pseudoElement')
+        ) {
+          throw new Error(
+            'Element, id and pseudo-element should not occur more then one time inside the selector'
+          );
+        }
+
+        if (
+          (type === 'element' && lastType !== undefined) ||
+          (type === 'id' && ![undefined, 'element'].includes(lastType)) ||
+          (type === 'class' &&
+            ![undefined, 'element', 'id', 'class'].includes(lastType)) ||
+          (type === 'attr' &&
+            ![undefined, 'element', 'id', 'class', 'attr'].includes(
+              lastType
+            )) ||
+          (type === 'pseudoClass' &&
+            ![
+              undefined,
+              'element',
+              'id',
+              'class',
+              'attr',
+              'pseudoClass',
+            ].includes(lastType)) ||
+          (type === 'pseudoElement' &&
+            ![
+              undefined,
+              'element',
+              'id',
+              'class',
+              'attr',
+              'pseudoClass',
+            ].includes(lastType))
+        ) {
+          throw new Error(
+            'Selector parts should be arranged in the following order: element, id, class, attribute, pseudo-class, pseudo-element'
+          );
+        }
+      }
+    })();
   },
 
-  id(/* value */) {
-    throw new Error('Not implemented');
+  /**
+   * @param {string} value
+   * @returns {Selector}
+   */
+  element(value) {
+    this.init();
+    this.instance.element(value);
+
+    return this.instance;
   },
 
-  class(/* value */) {
-    throw new Error('Not implemented');
+  /**
+   * @param {string} value
+   * @returns {Selector}
+   */
+  id(value) {
+    this.init();
+    this.instance.id(value);
+
+    return this.instance;
   },
 
-  attr(/* value */) {
-    throw new Error('Not implemented');
+  /**
+   * @param {string} value
+   * @returns {Selector}
+   */
+  class(value) {
+    this.init();
+    this.instance.class(value);
+
+    return this.instance;
   },
 
-  pseudoClass(/* value */) {
-    throw new Error('Not implemented');
+  /**
+   * @param {string} value
+   * @returns {Selector}
+   */
+  attr(value) {
+    this.init();
+    this.instance.attr(value);
+
+    return this.instance;
   },
 
-  pseudoElement(/* value */) {
-    throw new Error('Not implemented');
+  /**
+   * @param {string} value
+   * @returns {Selector}
+   */
+  pseudoClass(value) {
+    this.init();
+    this.instance.pseudoClass(value);
+
+    return this.instance;
   },
 
-  combine(/* selector1, combinator, selector2 */) {
-    throw new Error('Not implemented');
+  /**
+   * @param {string} value
+   * @returns {Selector}
+   */
+  pseudoElement(value) {
+    this.init();
+    this.instance.pseudoElement(value);
+
+    return this.instance;
+  },
+
+  /**
+   * @param {Selector} selector1
+   * @param {' '|'>'|'~'|'+'} combinator
+   * @param {Selector} selector2
+   * @returns {{
+   *   stringify(): string
+   * }}
+   */
+  combine(selector1, combinator, selector2) {
+    return (
+      /**
+       * @param {{
+       *   Selector: object
+       *   combinator: ' '|'>'|'~'|'+'
+       *   Selector: object
+       * }} props
+       * @returns {{
+       *   stringify(): string
+       * }}
+       */
+      (function combine(props) {
+        const selector = [];
+
+        selector.push(
+          props.selector1.stringify(),
+          ` ${props.combinator} `,
+          props.selector2.stringify()
+        );
+
+        return {
+          stringify() {
+            return selector.join('');
+          },
+        };
+      })({ selector1, combinator, selector2 })
+    );
   },
 };
 
