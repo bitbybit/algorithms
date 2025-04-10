@@ -192,8 +192,18 @@ function retry(func, attempts) {
  * cos(3.141592653589793) ends
  *
  */
-function logger(/* func, logFunc */) {
-  throw new Error('Not implemented');
+function logger(func, logFunc) {
+  return function fn(...parameters) {
+    const fnSignature = `${func.name}(${Array.from(parameters)
+      .map((parameter) => JSON.stringify(parameter))
+      .join(',')})`;
+
+    logFunc(`${fnSignature} starts`);
+    const result = func(...parameters);
+    logFunc(`${fnSignature} ends`);
+
+    return result;
+  };
 }
 
 /**
