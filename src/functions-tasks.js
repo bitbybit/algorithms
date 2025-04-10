@@ -150,8 +150,23 @@ function memoize(func) {
  * }, 2);
  * retryer() => 2
  */
-function retry(/* func, attempts */) {
-  throw new Error('Not implemented');
+function retry(func, attempts) {
+  let attemptsLeft = attempts;
+
+  return function fn() {
+    let result;
+
+    while (attemptsLeft > 0) {
+      try {
+        attemptsLeft -= 1;
+        result = func();
+      } catch {
+        return fn.call(this);
+      }
+    }
+
+    return result;
+  };
 }
 
 /**
