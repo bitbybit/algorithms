@@ -15,7 +15,7 @@ For example:
     ['^^', 1, 2]
   ])` => `3`
 
-Write your code in `src/count-cats.js`.
+Write your code in `src/count_cats.js`.
 
 ---
 
@@ -52,7 +52,7 @@ For example:
 
 `dateSample('WOOT!')` => `false`
 
-Write your code in `src/carbon-dating.js`.
+Write your code in `src/carbon_dating.js`.
 
 ---
 
@@ -72,7 +72,7 @@ For example:
 
 `createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null])` => `'LOO'`
 
-Write your code in `src/dream-team.js`.
+Write your code in `src/dream_team.js`.
 
 ---
 
@@ -105,7 +105,7 @@ For example:
 
 `getSeason(springDate)` => `'spring'`
 
-Write your code in `src/what-season.js`.
+Write your code in `src/what_season.js`.
 
 ---
 
@@ -135,7 +135,7 @@ For example:
 
 `calculateHanoi(9, 4308)` => `{ turns: 511, seconds: 427 }`
 
-Write your code in `src/hanoi-tower.js`.
+Write your code in `src/hanoi_tower.js`.
 
 ---
 
@@ -157,7 +157,7 @@ For example:
 
 The function must not affect inital array. Control sequences are applied **from left to right** to initial array elements. Control sequences **do not fall** into the transformed array. Control sequences in initial array don't occur in a row. If there is **no element** next to the control sequence **to which it can be applied** in the initial array, or this element was previously deleted, **it does nothing**. The function should throw an `Error` with message `'arr' parameter must be an instance of the Array!` if the `arr` is not an `Array`.
 
-Write your code in `src/transform-array.js`.
+Write your code in `src/transform_array.js`.
 
 ---
 
@@ -184,7 +184,7 @@ For example:
 
 `chainMaker.addLink(1).addLink(2).reverseChain().addLink(3).finishChain()` => `'( 2 )~~( 1 )~~( 3 )'`
 
-Write your code in `src/simple-chain.js`.
+Write your code in `src/simple_chain.js`.
 
 ---
 
@@ -205,7 +205,7 @@ For example:
 
 `depthCalc.calculateDepth([[[]]])` => `3`
 
-Write your code in `src/recursive-depth.js`.
+Write your code in `src/recursive_depth.js`.
 
 ---
 ### **Extended repeater**
@@ -231,7 +231,7 @@ The only indispensable parameter is `str`, any others may be not defined. `separ
 
 For example: `repeater('STRING', { repeatTimes: 3, separator: '**', addition: 'PLUS', additionRepeatTimes: 3, additionSeparator: '00' })` => `'STRINGPLUS00PLUS00PLUS**STRINGPLUS00PLUS00PLUS**STRINGPLUS00PLUS00PLUS'`
 
-Write your code in `src/extended-repeater.js`.
+Write your code in `src/extended_repeater.js`.
 
 ---
 
@@ -267,7 +267,7 @@ For example:
 
 `reverseMachine.decrypt('AEIHQX SX DLLU!', 'alphonse')` => `'!NWAD TA KCATTA'`
 
-Write your code in `src/vigenere-cipher.js`.
+Write your code in `src/vigenere_cipher.js`.
 
 ---
 
@@ -278,7 +278,7 @@ For example:
 
 `getCommonCharacterCount('aabcc', 'adcaa')` => `3`
 
-Write your code in `src/common-character-count.js`.
+Write your code in `src/common_character_count.js`.
 
 ---
 
@@ -289,7 +289,7 @@ For example:
 
 `deleteDigit(152) => 52`
 
-Write your code in `src/delete-digit.js`.
+Write your code in `src/delete_digit.js`.
 
 ---
 
@@ -300,7 +300,7 @@ For example:
 
 `getDNSStats(['code.yandex.ru', 'music.yandex.ru', 'yandex.ru'])` => `{'.ru': 3, '.ru.yandex': 3, '.ru.yandex.code': 1,'.ru.yandex.music': 1}`
 
-Write your code in `src/dns-stats.js`.
+Write your code in `src/dns_stats.js`.
 
 ---
 
@@ -311,7 +311,7 @@ For example:
 
 `encodeLine('aabbbc')` => `'2a3bc'`
 
-Write your code in `src/encode-line.js`.
+Write your code in `src/encode_line.js`.
 
 ---
 
@@ -323,7 +323,7 @@ For example:
 
 `renameFiles(["file", "file", "image", "file(1)", "file"])` => `["file", "file(1)", "image", "file(1)(1)", "file(2)"]`
 
-Write your code in `src/file-names.js`.
+Write your code in `src/file_names.js`.
 
 ---
 
@@ -334,7 +334,7 @@ For example:
 
 `getEmailDomain('prettyandsimple@example.com')` => `'example.com'`
 
-Write your code in `src/get-email-domain.js`.
+Write your code in `src/get_email_domain.js`.
 
 ---
 
@@ -346,7 +346,7 @@ For example:
 
 `isMAC48Address('00-1B-63-84-45-E6')` => `true`
 
-Write your code in `src/mac-adress.js`.
+Write your code in `src/mac_adress.js`.
 
 ---
 
@@ -365,7 +365,7 @@ const matrix = [
 getMatrixElementsSum(matrix) => 9
 ```
 
-Write your code in `src/matrix-elements-sum.js`.
+Write your code in `src/matrix_elements_sum.js`.
 
 ---
 
@@ -388,7 +388,7 @@ minesweeper(matrix) => [
 ];
 ```
 
-Write your code in `src/mine-sweeper.js`.
+Write your code in `src/mine_sweeper.js`.
 
 ---
 
@@ -400,7 +400,7 @@ For example:
 
 `sortByHeight([-1, 150, 190, 170, -1, -1, 160, 180])` => `[-1, 150, 160, 170, -1, -1, 180, 190]`
 
-Write your code in `src/sort-by-height.js`.
+Write your code in `src/sort_by_height.js`.
 
 ---
 
@@ -415,4 +415,4 @@ For 100, the result should be 1 (1 + 0 + 0 = 1)
 For 91, the result should be 1 (9 + 1 = 10, 1 + 0 = 1)  
 `getSumOfDigits(91)` => `1`
 
-Write your code in `src/sum-digits.js`.
+Write your code in `src/sum_digits.js`.

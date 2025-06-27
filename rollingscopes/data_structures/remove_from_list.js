@@ -1,4 +1,4 @@
-const { ListNode } = require('../extensions/list-node.js');
+const { ListNode } = require('./list_node.js');
 
 /**
  * Given a singly linked list of integers l and an integer k,

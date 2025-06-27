@@ -2,7 +2,7 @@
 
 ### **Binary search tree**
 
-![Binary search tree](./binary-search-tree.jpg)
+![Binary search tree](./binary_search_tree.jpg)
 
 A **binary tree** is a hierarchical **data structure** in which each **node** has a **value** (in this case, it is also a key) and **links** to the **left** and **right** **children**. The **node** that is at the topmost level (which is not someone else's child) is called the **root**. **Nodes** that have no children are called **leaves**.
 
@@ -45,7 +45,7 @@ For example:
 
 `tree.max()` => `4`
 
-Write your code in `src/binary-search-tree.js`.
+Write your code in `src/binary_search_tree.js`.
 
 ---
 
@@ -67,7 +67,7 @@ class ListNode {
 }
 ```
 
-Write your code in `src/remove-from-list.js`.
+Write your code in `src/remove_from_list.js`.
 
 ---
 

@@ -1,4 +1,4 @@
-const { Node } = require('../extensions/list-tree.js');
+const { Node } = require('./list_tree.js');
 
 /**
 * Implement simple binary search tree according to task description
