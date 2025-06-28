@@ -1,11 +1,11 @@
 # Пробные задачи по алгоритмам
 
-### [A. A+B](https://github.com/bitbybit/algorithms/blob/main/sample/a_plus_b/)
+### [A. A+B](https://github.com/bitbybit/coding-practice/tree/main/yandex/sample/a_plus_b/)
 
-### [B. Застёжка-молния](https://github.com/bitbybit/algorithms/blob/main/sample/zipper/)
+### [B. Застёжка-молния](https://github.com/bitbybit/coding-practice/tree/main/yandex/sample/zipper/)
 
-### [C. Скользящее среднее](https://github.com/bitbybit/algorithms/blob/main/sample/moving_average/)
+### [C. Скользящее среднее](https://github.com/bitbybit/coding-practice/tree/main/yandex/sample/moving_average/)
 
-### [D. Две фишки](https://github.com/bitbybit/algorithms/blob/main/sample/two_chips/)
+### [D. Две фишки](https://github.com/bitbybit/coding-practice/tree/main/yandex/sample/two_chips/)
 
-### [E. Две фишки 2](https://github.com/bitbybit/algorithms/blob/main/sample/two_chips_2/)
+### [E. Две фишки 2](https://github.com/bitbybit/coding-practice/tree/main/yandex/sample/two_chips_2/)
